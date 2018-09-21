@@ -1,0 +1,125 @@
+@for $i from 1 through $utility-limit
+  .m-#{$i}
+    margin: #{$i}px !important
+  .mt-#{$i}
+    margin-top: #{$i}px !important
+  .mb-#{$i}
+    margin-bottom: #{$i}px !important
+  .ml-#{$i}
+    margin-left: #{$i}px !important
+  .mr-#{$i}
+    margin-right: #{$i}px !important
+  .mv-#{$i}
+    margin-top: #{$i}px !important
+    margin-bottom: #{$i}px !important
+  .mh-#{$i}
+    margin-right: #{$i}px !important
+    margin-left: #{$i}px !important
+  .p-#{$i}
+    padding: #{$i}px !important
+  .pt-#{$i}
+    padding-top: #{$i}px !important
+  .pb-#{$i}
+    padding-bottom: #{$i}px !important
+  .pl-#{$i}
+    padding-left: #{$i}px !important
+  .pr-#{$i}
+    padding-right: #{$i}px !important
+  .pv-#{$i}
+    padding-top: #{$i}px !important
+    padding-bottom: #{$i}px !important
+  .ph-#{$i}
+    padding-right: #{$i}px !important
+    padding-left: #{$i}px !important
+  .fs-#{$i}
+    font-size: #{$i}px !important
+  .t-#{$i}
+    top: #{$i}px !important
+  .b-#{$i}
+    bottom: #{$i}px !important
+  .l-#{$i}
+    left: #{$i}px !important
+  .r-#{$i}
+    right: #{$i}px !important
+  .width-#{$i * 10}
+    width: #{$i * 10}px !important
+  .height-#{$i * 10}
+    height: #{$i * 10}px !important
+  .z-index-#{$i * 100}
+    z-index: #{$i * 100} !important
+
+@for $i from 0 through 10
+  .opacity-#{$i}
+    opacity: $i/10
+
+
+.full-width
+  width: 100% !important
+
+@for $i from 1 through 9
+  .fw-#{$i * 100}
+    font-weight: ($i * 100) !important
+
+.hide
+  visibility: hidden !important
+
+$displays: none, inline, inline-block, block, grid, flex
+
+@each $display in $displays
+  .d-#{$display}
+    display: $display !important
+
+$positions: static, relative, absolute, fixed, sticky
+
+@each $position in $positions
+  .position-#{$position}
+    position: $position !important
+
+$vertical-aligns: baseline, length, sub, super, top, text-top, middle, bottom, text-bottom, initial, inherit
+
+@each $vertical-align in $vertical-aligns
+  .va-#{$vertical-align} vertical-align: $vertical-align !important
+
+$text-aligns: left, right, center, justify, initial, inherit
+
+@each $text-align in $text-aligns
+  .ta-#{$text-align}
+    text-align: $text-align !important
+
+$floats: none, left, right, initial, inherit
+
+@each $float in $floats
+  .float-#{$float}
+    float: $float !important
+
+.fixed-top
+  position: fixed !important
+  top: 0 !important
+  right: 0 !important
+  left: 0 !important
+  z-index: 10000 !important
+
+.fixed-bottom
+  position: fixed !important
+  right: 0 !important
+  bottom: 0 !important
+  left: 0 !important
+  z-index: 10000 !important
+
+.text-lowercase
+  text-transform: lowercase !important
+.text-uppercase
+  text-transform: uppercase !important
+.text-capitalize
+  text-transform: capitalize !important
+
+.scroll
+  overflow: scroll !important
+
+.scroll-x
+  overflow-x: scroll !important
+  overflow-y: hidden !important
+
+.scroll-y
+  overflow-x: hidden !important
+  overflow-y: scroll !important
